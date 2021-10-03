@@ -29,7 +29,3 @@ public:
 		raw(0x584AC7, "\xD9\x1D\x28\x09\x8D\x00", 0x6);
 	};
 }; CMain plugin;
-
-//mem.fill(0x5880B1, 0x90, 5, true) \xE8\x6A\xFC\xFF\xFF
-//mem.fill(0x584ABD, 0x90, 6, true) \xD9\x1D\x20\x09\x8D\x00
-//mem.fill(0x584AC7, 0x90, 6, true) \xD9\x1D\x28\x09\x8D\x00
