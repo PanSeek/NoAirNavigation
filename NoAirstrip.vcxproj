@@ -24,6 +24,7 @@
     <ProjectGuid>{b94106d6-9f72-4f29-9710-2b08e9bc4b84}</ProjectGuid>
     <RootNamespace>NoAirstrip</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>NoAirNavigation</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
