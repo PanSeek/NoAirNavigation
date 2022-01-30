@@ -1,4 +1,4 @@
-﻿#include <Windows.h>
+﻿#include <windows.h>
 
 auto __cdecl fill(unsigned __int32 address, unsigned __int8 value, unsigned __int32 size) -> void {
 	DWORD oldProt{ 0 };
@@ -16,9 +16,8 @@ auto __cdecl raw(unsigned __int32 address, const char* RawData, unsigned __int16
 	return;
 }
 
-class CMain {
-public:
-	CMain() {
+struct stMain {
+	stMain() {
 		fill(0x5880B1, 0x90, 0x5);
 		fill(0x584ABD, 0x90, 0x6);
 		fill(0x584AC7, 0x90, 0x6);
@@ -43,7 +42,7 @@ public:
 		fill(0x588573, 0x90, 0x4);
 		fill(0x588577, 0x90, 0x6);
 	};
-	~CMain() {
+	~stMain() {
 		raw(0x5880B1, "\xE8\x6A\xFC\xFF\xFF", 0x5);
 		raw(0x584ABD, "\xD9\x1D\x20\x09\x8D\x00", 0x6);
 		raw(0x584AC7, "\xD9\x1D\x28\x09\x8D\x00", 0x6);
@@ -68,4 +67,4 @@ public:
 		raw(0x588573, "\x66\x39\x58\x22", 0x4);
 		raw(0x588577, "\x0F\x85\xAD\x01\x00\x00", 0x6);
 	};
-}; CMain plugin;
+} plugin;
